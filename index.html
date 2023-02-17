@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>HTTP</title>
+    <style>
+        #postContainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="bg-primary text-white mb-4 p-4">
+        CRUD HTTP using Promise 
+    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 bg-primary">
+                <form id="postForm">
+                    <div>
+                        <div class="form-group mb-4">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="content">Content</label>
+                            <textarea rows="5" id="content" class="form-control"></textarea>
+                        </div>
+                        <div class="text-right mb-4">
+                            <button class="btn btn-dark" type="submit" id="submitBtn">Submit</button>
+                            <button class="btn btn-dark d-none" type="button" id="updateBtn">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="postContainer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
